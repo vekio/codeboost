@@ -1,0 +1,6 @@
+# direnv
+.direnv
+.envrc
+
+# nodejs
+node_modules
