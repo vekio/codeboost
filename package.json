@@ -1,13 +1,13 @@
 {
   "name": "codeboost",
   "displayName": "CodeBoost",
-  "description": "",
+  "description": "A VSCode extension to boost developer workflow",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.96.0"
   },
   "categories": [
-    "Other"
+    "SCM Providers"
   ],
   "activationEvents": [],
   "main": "./out/extension.js",

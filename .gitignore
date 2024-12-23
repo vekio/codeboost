@@ -4,3 +4,7 @@
 
 # nodejs
 node_modules
+out
+
+# VSCode
+.vscode-test

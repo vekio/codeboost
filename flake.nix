@@ -17,9 +17,12 @@
         default = pkgs.mkShell {
           name = "codeboost";
 
-          packages = with pkgs; [ nodejs nodePackages.pnpm ];
+          packages = with pkgs; [ nodejs nodePackages.pnpm nss nspr alsa-lib ];
 
-          env = { };
+          env = {
+            LD_LIBRARY_PATH =
+              "${pkgs.nss}/lib:${pkgs.nspr}/lib:${pkgs.alsa-lib}/lib";
+          };
 
           shellHook = "";
         };
